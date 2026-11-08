@@ -12,11 +12,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Ricardo A. Rosario Garcia | Front-End Developer',
+  title: 'Ricardo Rosario | Portfolio',
   description:
-    'Certified HTML/CSS and JavaScript developer, U.S. Army veteran, and Department of the Army security professional based in Puerto Rico.',
+    'Certified HTML/CSS, JavaScript and ReactJS developer, U.S. Army veteran, and Department of the Army security professional based in Puerto Rico.',
   openGraph: {
-    title: 'Ricardo A. Rosario Garcia | Front-End Developer',
+    title: 'Ricardo Rosario | Front-End Developer',
     description:
       'Building useful, responsive web experiences with a mission-first mindset.',
     type: 'website',

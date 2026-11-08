@@ -24,6 +24,9 @@ export default function ParticlesBackground() {
     const context = canvas?.getContext('2d');
 
     if (!canvas || !context) return;
+    const container = canvas.parentElement;
+
+    if (!container) return;
 
     const motionPreference = window.matchMedia(
       '(prefers-reduced-motion: reduce)',
@@ -36,12 +39,11 @@ export default function ParticlesBackground() {
 
     const resize = () => {
       const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
-      width = window.innerWidth;
-      height = window.innerHeight;
-      canvas.width = width * pixelRatio;
-      canvas.height = height * pixelRatio;
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
+      const bounds = container.getBoundingClientRect();
+      width = bounds.width;
+      height = bounds.height;
+      canvas.width = Math.round(width * pixelRatio);
+      canvas.height = Math.round(height * pixelRatio);
       context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
 
       const count = Math.min(
@@ -173,7 +175,8 @@ export default function ParticlesBackground() {
 
     const handleResize = () => {
       resize();
-      if (motionPreference.matches) draw();
+      window.cancelAnimationFrame(animationFrame);
+      draw();
     };
 
     const handleVisibilityChange = () => {
@@ -183,6 +186,8 @@ export default function ParticlesBackground() {
 
     resize();
     draw();
+    const resizeObserver = new ResizeObserver(handleResize);
+    resizeObserver.observe(container);
     window.addEventListener('resize', handleResize);
     window.addEventListener('pointermove', updatePointer, { passive: true });
     window.addEventListener('pointerout', clearPointer);
@@ -192,6 +197,7 @@ export default function ParticlesBackground() {
 
     return () => {
       window.cancelAnimationFrame(animationFrame);
+      resizeObserver.disconnect();
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('pointermove', updatePointer);
       window.removeEventListener('pointerout', clearPointer);

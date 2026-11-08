@@ -1,6 +1,6 @@
 # Project Instructions
 
-- This is Ricardo A. Rosario Garcia's personal front-end developer portfolio, not an AI SaaS template. Keep user-facing copy grounded in his resume and verified public projects.
+- This is Ricardo Rosario's personal front-end developer portfolio, not an AI SaaS template. Keep user-facing copy grounded in his resume and verified public projects.
 - Follow [`spec.md`](./spec.md) for the visual direction and palette.
 - Prefer shared theme tokens and styles over hard-coded colors.
 - Keep interactions responsive, keyboard accessible, and readable. Respect `prefers-reduced-motion` for all animation.
