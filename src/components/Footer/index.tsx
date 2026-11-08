@@ -19,7 +19,7 @@ export default function Footer() {
       <div className='footer-inner' data-reveal>
         <a className='brand footer-brand' href='#top'>
           <span className='brand-mark'>
-            <span>{{{{}}}}</span>
+            <span>{'{'}{'}'}</span>
           </span>
           <span className='brand-name'>RICARDO ROSARIO</span>
         </a>
