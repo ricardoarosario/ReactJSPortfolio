@@ -127,14 +127,15 @@ export default function Home() {
               </p>
 
               <h1 className='hero-title' data-reveal data-reveal-delay='1'>
-                Ricardo A.
+                Ricardo
                 <br />
-                <span>Rosario Garcia</span>
+                <span>Rosario</span>
               </h1>
 
               <p className='hero-role' data-reveal data-reveal-delay='2'>
-                Certified <span>HTML/CSS</span> &amp;{' '}
-                <span>JavaScript Developer</span>
+                Certified <span>HTML/CSS |</span> &amp;{' '}
+                <span> JavaScript |</span>
+                <span> ReactJS Developer</span>
               </p>
 
               <p className='hero-summary' data-reveal data-reveal-delay='3'>
@@ -168,7 +169,7 @@ export default function Home() {
               <div className='portrait-frame'>
                 <Image
                   src={portrait}
-                  alt='Portrait of Ricardo A. Rosario Garcia'
+                  alt='Portrait of Ricardo Rosario'
                   fill
                   priority
                   sizes='(max-width: 760px) 82vw, 38vw'

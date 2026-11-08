@@ -19,13 +19,13 @@ export default function Header() {
         <a
           className='brand'
           href='#top'
-          aria-label='Ricardo Rosario Garcia, home'
+          aria-label='Ricardo Rosario, home'
           onClick={() => setMenuOpen(false)}
         >
           <span className='brand-mark'>
-            R<span>.</span>
+            <span>{'{'}{'}'}</span>
           </span>
-          <span className='brand-name'>RICARDO ROSARIO</span>
+          <span className='brand-name'></span>
         </a>
 
         <button

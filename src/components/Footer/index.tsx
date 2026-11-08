@@ -44,7 +44,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <p className='footer-copyright'>© 2026 Ricardo A. Rosario Garcia</p>
+        <p className='footer-copyright'>© 2026 Ricardo Rosario</p>
       </div>
     </footer>
   );
