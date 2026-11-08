@@ -23,7 +23,7 @@ const projects = [
       'A responsive, multi-section storefront with dynamic service cards, an appointment calendar, and browser-based booking interactions.',
     stack: ['HTML5', 'CSS3', 'JavaScript'],
     href: 'https://github.com/ricardoarosario/Barbershop-Website',
-    mark: 'BB',
+    mark: 'Barbershop',
     color: 'cyan',
   },
   {
@@ -34,7 +34,7 @@ const projects = [
       'A component-based storefront built during ReactJS coursework, practicing reusable UI, JSX, hooks, and responsive layouts.',
     stack: ['React', 'Vite', 'Tailwind CSS'],
     href: 'https://github.com/ricardoarosario/BeansRepo',
-    mark: 'BEANS',
+    mark: 'Beans',
     color: 'gray',
   },
   {
@@ -133,7 +133,7 @@ export default function Home() {
               </h1>
 
               <p className='hero-role' data-reveal data-reveal-delay='2'>
-                Certified <span>HTML/CSS |</span> &amp;{' '}
+                Certified <span>HTML/CSS |</span>
                 <span> JavaScript |</span>
                 <span> ReactJS Developer</span>
               </p>
@@ -146,22 +146,22 @@ export default function Home() {
 
               <div className='hero-actions' data-reveal data-reveal-delay='4'>
                 <a className='button button-primary' href='#projects'>
-                  Explore my projects
+                  View my projects
                   <span aria-hidden='true'>↘</span>
                 </a>
                 <a
                   className='button button-quiet'
                   href='mailto:ricardo.a2046@gmail.com'
                 >
-                  Get in touch
+                  Get in touch!
                   <span aria-hidden='true'>↗</span>
                 </a>
               </div>
 
               <div className='hero-meta' data-reveal data-reveal-delay='5'>
-                <span>PUERTO RICO</span>
-                <span className='meta-divider' aria-hidden='true' />
-                <span>U.S. ARMY VETERAN</span>
+                <span></span>
+                {/* <span className='meta-divider' aria-hidden='true' /> */}
+                <span></span>
               </div>
             </div>
 
@@ -175,7 +175,9 @@ export default function Home() {
                   sizes='(max-width: 760px) 82vw, 38vw'
                   className='portrait-image'
                 />
-                <span className='portrait-coordinate'>PUERTO RICO</span>
+                <span className='portrait-coordinate'>U.S. ARMY VETERAN 
+                <span className='scroll-line' aria-hidden='true' />
+                PUERTO RICO</span>
                 <span className='portrait-scanline' aria-hidden='true' />
               </div>
               <div className='portrait-caption'>
@@ -193,7 +195,7 @@ export default function Home() {
 
           <a className='scroll-cue' href='#profile' data-reveal>
             <span className='scroll-line' aria-hidden='true' />
-            SCROLL TO EXPLORE
+            EXPLORE
           </a>
         </section>
 
@@ -208,7 +210,7 @@ export default function Home() {
 
             <div className='profile-copy'>
               <p data-reveal>
-                I&apos;m a certified HTML/CSS and JavaScript developer, U.S.
+                I&apos;m a certified HTML/CSS, JavaScript and ReactJS developer, U.S.
                 Army veteran, and Department of the Army security professional.
                 I&apos;m now bringing the same care I&apos;ve built over years
                 of service into front-end development.
@@ -286,6 +288,22 @@ export default function Home() {
                 <span>
                   <strong>JavaScript</strong>
                   <small>Certified · Core programming fundamentals</small>
+                </span>
+                <span className='cert-check' aria-label='Certified'>
+                  VERIFIED
+                </span>
+              </div>
+              <div
+                className='certification-card'
+                data-reveal
+                data-reveal-delay='2'
+              >
+                <span className='cert-icon' aria-hidden='true'>
+                  RJS
+                </span>
+                <span>
+                  <strong>ReactJS</strong>
+                  <small>Certified · Component-based architecture</small>
                 </span>
                 <span className='cert-check' aria-label='Certified'>
                   VERIFIED
@@ -402,7 +420,7 @@ export default function Home() {
             <div className='recognition-heading'>
               <p className='eyebrow' data-reveal>
                 <span className='eyebrow-index'>05</span>
-                RECOGNITION &amp; EDUCATION
+                RECOGNITION
               </p>
               <h2 className='section-title' data-reveal data-reveal-delay='1'>
                 Consistency counts.
@@ -416,7 +434,7 @@ export default function Home() {
                   <p>Annual Performance Appraisal · Department of the Army</p>
                 </div>
                 <span className='recognition-symbol' aria-hidden='true'>
-                  +
+                 ☑
                 </span>
               </article>
               <article
@@ -426,25 +444,11 @@ export default function Home() {
               >
                 <span className='recognition-year'>2025</span>
                 <div>
-                  <h3>Cash Performance Award</h3>
+                  <h3>Performance Award</h3>
                   <p>Recognized for mission support and performance.</p>
                 </div>
                 <span className='recognition-symbol' aria-hidden='true'>
-                  +
-                </span>
-              </article>
-              <article
-                className='recognition-card education-card'
-                data-reveal
-                data-reveal-delay='2'
-              >
-                <span className='recognition-year'>2013</span>
-                <div>
-                  <h3>High School Diploma</h3>
-                  <p>Education</p>
-                </div>
-                <span className='recognition-symbol' aria-hidden='true'>
-                  +
+                  ☑
                 </span>
               </article>
             </div>
