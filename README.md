@@ -1,27 +1,30 @@
-# Ricardo Rosario Garcia — Portfolio
+# Ricardo Rosario Garcia — Front-End Developer Portfolio
 
-A personal portfolio for a certified HTML/CSS and JavaScript developer. The site highlights selected learning projects, technical foundations, professional experience, military service, and recognition.
+A responsive personal portfolio that presents my front-end development skills, selected coursework and practice projects, certifications, and professional background. Built with Next.js, React, TypeScript, and Tailwind CSS, it demonstrates how I structure a polished, accessible single-page experience around clear content and intentional interaction design.
 
-## Run locally
+**Live site:** [ricardoarosario.com](https://ricardoarosario.com/)
 
-```bash
-npm install
-npm run dev
-```
+## Highlights
 
-Open [http://localhost:3000](http://localhost:3000).
+- Responsive, single-page portfolio designed for desktop and mobile viewing
+- Project showcase linking to verified public GitHub repositories
+- Skills, certifications, career experience, recognition, and contact sections
+- Accessible page structure, keyboard-friendly navigation, and a skip-to-content link
+- Scroll-reveal effects powered by the browser's `IntersectionObserver` API with reduced-motion support
+- Metadata configured for a clear browser and social-sharing preview
 
-## Production build
+## Tech stack
 
-```bash
-npm run build
-npm run start
-```
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- CSS animations and `IntersectionObserver`
 
-## Design and motion
+## Design and accessibility
 
-The site uses a dark, futuristic visual system with Midnight Slate, Electric Cyan, Cool Gray, and Off-White. Its scroll reveals use the browser's `IntersectionObserver` API and respect reduced-motion preferences. See [`spec.md`](./spec.md) and [`claude.md`](./claude.md) for the UI and project guidance.
+The interface uses a dark, tech-forward visual system built around Midnight Slate, Electric Cyan, Cool Gray, and Off-White. Motion is subtle and content-led; reveal animations keep content visible and respect the user's `prefers-reduced-motion` setting. See [`spec.md`](./spec.md) for the design direction.
 
 ## Portfolio content
 
-Resume-based career details and public project links are maintained in `src/app/(site)/page.tsx`. The supplied portrait is in `src/assets/Professional Corporate Picture.png`.
+Career details and project links are intentionally limited to resume-based information and verified public repositories. Update this content in `src/app/(site)/page.tsx` as projects and experience evolve.

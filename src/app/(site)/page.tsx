@@ -9,6 +9,12 @@ const skills = [
   'Responsive design',
   'DOM manipulation',
   'React',
+  'SQL (MySQL)',
+  'Relational databases',
+  'Database schema design',
+  'MySQL Workbench',
+  'DBeaver',
+  'MongoDB Compass',
   'Technical documentation',
   'Procedural compliance',
   'Training & development',
@@ -39,6 +45,17 @@ const projects = [
   },
   {
     number: '03',
+    name: 'School Demo Database',
+    type: 'Guided MySQL database project',
+    description:
+      'Designed a seven-table relational school database for students, classes, enrollments, grades, assignments, scores, and attendance using SQL scripts and primary and foreign keys. Used MySQL Workbench and DBeaver to develop and inspect tables, write INSERT statements, and run multi-table JOIN queries for enrollment and grade data.',
+    stack: ['MySQL', 'Relational schema', 'MySQL Workbench', 'DBeaver'],
+    href: 'https://github.com/ricardoarosario/School_Demo_Schema',
+    mark: 'SQL · 07 TABLES',
+    color: 'cyan',
+  },
+  {
+    number: '04',
     name: 'JavaScript Practice',
     type: 'Interactive calculator',
     description:
@@ -133,9 +150,10 @@ export default function Home() {
               </h1>
 
               <p className='hero-role' data-reveal data-reveal-delay='2'>
-                Certified <span>HTML/CSS |</span>
-                <span> JavaScript |</span>
-                <span> ReactJS Developer</span>
+                Certified <span>HTML/CSS Web Designer |</span>
+                <span> JavaScript Professional Developer |</span>
+                <span> ReactJS Framework Developer |</span>
+                <span> MySQL Backend Developer</span>
               </p>
 
               <p className='hero-summary' data-reveal data-reveal-delay='3'>
@@ -210,16 +228,15 @@ export default function Home() {
 
             <div className='profile-copy'>
               <p data-reveal>
-                I&apos;m a certified HTML/CSS, JavaScript and ReactJS developer, U.S.
-                Army veteran, and Department of the Army security professional.
-                I&apos;m now bringing the same care I&apos;ve built over years
-                of service into front-end development.
+                I'm a certified HTML/CSS, JavaScript and ReactJS developer, currently pursuing MySQL certification.
+                U.S. Army veteran, and Department of the Army security professional.
+                I'm now bringing the same care I've built over years
+                of service into front-end and back-end development.
               </p>
               <p data-reveal data-reveal-delay='1'>
                 Clear documentation, thoughtful collaboration, and dependable
-                execution have been part of my day-to-day for years. I&apos;m
-                ready to put those strengths to work building useful, responsive
-                web experiences.
+                execution have been part of my day-to-day for years. I'm
+                ready to put those strengths to work in IT development/engineering.
               </p>
 
               <a
@@ -308,6 +325,20 @@ export default function Home() {
                 <span className='cert-check' aria-label='Certified'>
                   VERIFIED
                 </span>
+              </div>
+              <div
+                className='certification-card'
+                data-reveal
+                data-reveal-delay='3'
+              >
+                <span className='cert-icon' aria-hidden='true'>
+                  SQL
+                </span>
+                <span>
+                  <strong>MySQL Backend Developer</strong>
+                  <small>Certification · In progress</small>
+                </span>
+                <span className='cert-check'>IN PROGRESS</span>
               </div>
               <a
                 className='text-link cert-link'

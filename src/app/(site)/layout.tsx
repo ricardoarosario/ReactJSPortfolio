@@ -14,7 +14,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: 'Ricardo Rosario | Portfolio',
   description:
-    'Certified HTML/CSS, JavaScript and ReactJS developer, U.S. Army veteran, and Department of the Army security professional based in Puerto Rico.',
+    'Certified HTML/CSS, JavaScript, ReactJS and MySQL developer, U.S. Army veteran, and Department of the Army security professional based in Puerto Rico.',
   openGraph: {
     title: 'Ricardo Rosario | Front-End Developer',
     description:
