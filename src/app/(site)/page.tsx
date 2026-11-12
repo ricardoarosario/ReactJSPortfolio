@@ -158,8 +158,9 @@ export default function Home() {
 
               <p className='hero-summary' data-reveal data-reveal-delay='3'>
                 I bring a mission-first mindset, six years of experience in
-                high-accountability environments, and a growing front-end
-                practice to every team I join.
+                high-accountability environments, and growing hands-on experience in front-end and back-end development. 
+                I'm eager to apply my problem-solving skills, attention to detail, 
+                and commitment to continuous learning in a collaborative software development environment.
               </p>
 
               <div className='hero-actions' data-reveal data-reveal-delay='4'>
