@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Ricardo Rosario Garcia — Front-End Developer Portfolio
+=======
+# Ricardo Rosario - Front-End Developer Portfolio
+>>>>>>> 197272e8a0cbac976357c6625fef7658e95e26bb
 
 A responsive personal portfolio that presents my front-end development skills, selected coursework and practice projects, certifications, and professional background. Built with Next.js, React, TypeScript, and Tailwind CSS, it demonstrates how I structure a polished, accessible single-page experience around clear content and intentional interaction design.
 
@@ -24,7 +28,10 @@ A responsive personal portfolio that presents my front-end development skills, s
 ## Design and accessibility
 
 The interface uses a dark, tech-forward visual system built around Midnight Slate, Electric Cyan, Cool Gray, and Off-White. Motion is subtle and content-led; reveal animations keep content visible and respect the user's `prefers-reduced-motion` setting. See [`spec.md`](./spec.md) for the design direction.
+<<<<<<< HEAD
 
 ## Portfolio content
 
 Career details and project links are intentionally limited to resume-based information and verified public repositories. Update this content in `src/app/(site)/page.tsx` as projects and experience evolve.
+=======
+>>>>>>> 197272e8a0cbac976357c6625fef7658e95e26bb
